@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="papa">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo.png"></a>
+            </div>
+            <h1>Dashboard</h1>
+            <div class="righty">
+                <a href="#" id="theme">
+                    <i class="fa fa-sun-o" style="color: orange; font-size: 36px;"></i>
+                </a>
+                <a href="#" id="mail">
+                    <i class="fa fa-bell-o" style="color: yellow; font-size: 36px;"></i>
+                </a>
+                <div class="proview">
+                    <img id="propic" src="propic.png">
+                    <h4 id="proname">Nikhil</h4>
+                    <a href="#" class="opro">
+                        <i class="fa fa-angle-double-down" style="color: #ffffff; font-size: 24px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="sidebar">
+                <ul id="side-list">
+                    <li><a class="active" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                    <li><a href="index.html"><i class="fa fa-shopping-cart"></i> Order Portal</a></li>
+                    <li><a href="index.html"><i class="fa fa-money"></i> Finance</a></li>
+                    <li><a href="index.html"><i class="fa fa-gears"></i> Settings</a></li>
+                    <li><a href="index.html"><i class="fa fa-sign-out"></i> Sign out</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <div class="row1">
+                    <div class="content-box" id="r1-b1">
+                        <h2 id="headache1">Today's Sales</h2>
+                        <h5 id="headache2">Sales Summary</h5>
+                        <div class="fourbox">
+                            <div id="sales" class="square">
+                                <img src="sales.png">
+                                <h3>₹80k</h3>
+                                <h5>Total Sales</h5>
+                                <h6>+8% from yesterday</h6>
+                            </div>
+                            <div id="order" class="square">
+                                <img src="order.png">
+                                <h3>200</h3>
+                                <h5>Total Order</h5>
+                                <h6>+5% from yesterday</h6>
+                            </div>
+                            <div id="proadd" class="square">
+                                <img src="product sold.png">
+                                <h3>10</h3>
+                                <h5>Product Sold</h5>
+                                <h6>+1.2% from yesterday</h6>
+                            </div>
+                            <div id="newcus" class="square">
+                                <img src="new cus.jpg">
+                                <h3>5</h3>
+                                <h5>New Customers</h5>
+                                <h6>+0.5% from yesterday</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box" id="r1-b2">
+                        <h2 id="headache1">Visitor Insights</h2>
+                        <canvas style="margin: 10px;" id="myChart1" width="360" height="150">
+                        </canvas>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="content-box" id="r2-b1">
+                        <h2 id="headache1">Total Revenue</h2>
+                        <canvas style="margin: 10px;" id="myChart2" width="450" height="360">
+                        </canvas>
+                    </div>
+                    <div class="content-box" id="r2-b2">
+                        <h2 id="headache1">Customer Reach Sources</h2>
+                        <canvas style="margin: 10px;" id="myChart3" width="350" height="100">
+                        </canvas>
+                    </div>
+                    <div class="content-box" id="r2-b3">
+
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="content-box" id="r3-b1">
+                        <h2 id="headache1">Website Traffic</h2>
+                        <canvas style="margin: 10px;" id="myChart4" width="450" height="210">
+                        </canvas>
+                    </div>
+                    <div class="content-box" id="r3-b2">
+                        <h2 id="headache1">State-wise Investments</h2>
+                        <canvas style="margin: 10px;" id="myChart5" width="450" height="210">
+                        </canvas>
+                    </div>
+                    <div class="content-box" id="r3-b3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
