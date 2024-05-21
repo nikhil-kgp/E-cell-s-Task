@@ -28,18 +28,6 @@
     align-items: center;
 }
 
-.side-list img {
-    height: 50px;
-    width: 150px;
-}
-
-.side-list h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-}
-
 .righty {
     position: absolute;
     right: 20px;
@@ -95,6 +83,19 @@
     background-color: #FFFFFF;
     border: 2px solid #626F86;
 }
+
+.side-list img {
+    height: 50px;
+    width: 150px;
+}
+
+.side-list h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
 
 #side-list li{
     list-style: none;
